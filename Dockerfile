@@ -1,4 +1,4 @@
-FROM alpine:3.13.4
+FROM alpine:3.15.0
 
 ENV CRONTAB_ENTRY=""
 

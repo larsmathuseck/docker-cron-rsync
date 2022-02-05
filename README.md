@@ -1,4 +1,4 @@
-# Docker cron rsync
+# Docker cron rsync [Fork from https://github.com/Glideh/docker-cron-rsync]
 
 ## Usage
 
@@ -9,7 +9,7 @@ version: "3"
 
 services:
   rsync:
-    image: glide/cron-rsync:1.0
+    image: larsmathuseck/cron-rsync:latest
     volumes:
       - ~/.ssh:/host-ssh:ro
       - ./backup:/backup

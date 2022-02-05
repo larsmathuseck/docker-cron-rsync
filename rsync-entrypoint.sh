@@ -4,7 +4,7 @@ set -e
 
 # Grants host ssh config to root
 mkdir -p ~/.ssh
-cp -r /host-ssh/* ~/.ssh/
+cp -r /host-ssh/* ~/.ssh/ 2>/dev/null || :
 chown -R $(id -u):$(id -g) ~/.ssh
 
 # Creates the cron script

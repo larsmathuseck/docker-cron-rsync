@@ -2,7 +2,7 @@ version: "3"
 
 services:
   rsync:
-    image: glide/cron-rsync:1.0
+    image: larsmathuseck/cron-rsync:tagname:latest
     build: .
     volumes:
       - ~/.ssh:/host-ssh:ro
